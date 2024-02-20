@@ -1,0 +1,41 @@
+//Q11 Write a C program using function to check whether a number is a palindrome or not.
+
+//Code:
+
+int palindrome(int);
+int main()
+{
+int n;
+printf("Enter a number:\n");
+scanf("%d",&n);
+int b=palindrome(n);
+if(b==n)
+{
+    printf("Number is a palindrome");
+}
+else
+{
+    printf("Number is not a palindrome");
+}
+return 0;
+}
+int palindrome(int n)
+{
+    int r,s=0;
+    while(n>0)
+    {
+        r=n%10;
+        s=s*10+r;
+        n=n/10;
+    }
+    return s;
+}
+
+//OUTPUT:
+
+Enter a number:
+121
+Number is a palindrome
+Enter a number:
+123
+Number is not a palindrome

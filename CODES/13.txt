@@ -1,0 +1,38 @@
+//Q13 Write a C program to find maximum and minimum between two numbers using functions.
+
+//Code:
+
+#include<stdio.h>
+int maxmin(int,int);
+void main()
+{
+int n1,n2;
+printf("Enter two numbers:\n");
+scanf("%d%d",&n1,&n2);
+max(n1,n2);
+}
+void max(int a,int b)
+{
+if(a>b)
+{
+    printf("%d is maximum\n",a);
+    printf("%d is minimum",b);
+}
+else if(b>a)
+{
+    printf("%d is maximum\n",b);
+    printf("%d is minimum",a);
+}
+else
+{
+    printf("Both are equal");
+}
+}
+
+//OUTPUT:
+
+Enter two numbers:
+2
+3
+3 is maximum
+2 is minimum

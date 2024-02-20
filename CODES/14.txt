@@ -1,0 +1,32 @@
+//Q14 Write a C program to find whether an inputed number is even or odd using functions.
+
+//Code:
+
+#include<stdio.h>
+void evod(int n)
+{
+    if(n%2==0)
+    {
+        printf("Even");
+    }
+    else
+    {
+        printf("Odd");
+    }
+}
+void main()
+{
+    int n;
+    printf("Enter a number:\n");
+    scanf("%d",&n);
+    evod(n);
+}
+
+//OUTPUT:
+
+Enter a number:
+4
+Even
+Enter a number:
+5
+Odd

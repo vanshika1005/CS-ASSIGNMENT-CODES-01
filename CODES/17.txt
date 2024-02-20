@@ -1,0 +1,52 @@
+//Q17 Write a C program to print the largest element in each row in a given matrix using function.
+
+//Code:
+
+#include<stdio.h>
+void lar(int[][100],int,int);
+int main()
+{
+    int a[100][100],i,j,m,n;
+    printf("Enter number of rows and columns:\n");
+    scanf("%d%d",&m,&n);
+    printf("Enter elements:\n");
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    lar(a,m,n);
+    return 0;
+}
+void lar(int a[][100],int n,int b)
+{
+    int i,j,l;
+    for(i=0;i<n;i++)
+    {
+        l=a[i][0];
+        for(j=0;j<n;j++)
+        {
+            if(a[i][j]>l)
+            {
+                l=a[i][j];
+            }
+            }
+            printf("Largest element of %d row=%d\n",i+1,l);
+        }
+        return 0;
+    }
+
+//OUTPUT:
+
+Enter number of rows and columns:
+2
+2
+Enter elements:
+1
+2
+3
+4
+Largest element of 1 row=2
+Largest element of 2 row=4

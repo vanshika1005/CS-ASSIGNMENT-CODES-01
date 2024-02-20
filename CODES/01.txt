@@ -1,0 +1,37 @@
+//Q1 Write a C program to find sum and average of given elements in an array.
+
+//Code:
+
+#include<stdio.h>
+void main()
+{
+int n,i,s=0;
+float avg;
+printf("Enter the size of an array:\n");
+scanf("%d",&n);
+int a[n];
+printf("Enter the values:\n");
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+}
+for(i=0;i<n;i++)
+{
+    s=s+a[i];
+    
+}
+avg=s/n;
+    printf("sum is %d and avg is %f",s,avg);
+
+}
+
+//OUTPUT:
+
+'
+Enter the size of an array:
+3
+Enter the values:
+23
+3
+4
+sum is 30 and avg is 10.000000

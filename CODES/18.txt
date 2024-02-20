@@ -1,0 +1,43 @@
+//Q18 Write a C program to calculate the sum and average of n numbers in an array using functions.
+
+//Code:
+
+#include<stdio.h>
+int sum(int[],int);
+void main()
+{
+    int n,i,a[100];
+    printf("Enter the size of an array:\n");
+    scanf("%d",&n);
+    printf("Enter the array elements:\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+
+int b=sum(a,n);
+float avg=(float)b/n;
+printf("Sum is %d\n",b);
+printf("avg is %f\n",avg);
+}
+int sum(int x[],int p)
+{
+int s=0,i;
+for(i=0;i<p;i++)
+{
+s=s+x[i];
+}
+return s;
+}
+
+
+//OUTPUT:
+
+Enter the size of an array:
+3
+Enter the array elements:
+1
+2
+3
+Sum is 6
+avg is 2.000000

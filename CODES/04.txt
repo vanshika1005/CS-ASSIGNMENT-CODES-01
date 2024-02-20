@@ -1,0 +1,49 @@
+//Q4 Write a C program to input an element k in an array and check whether number of elements greater than, less than and equal to the element k.
+
+//Code:
+
+#include<stdio.h>
+void main()
+{
+    int i,n,a[10],k,g,l,e;
+    g=l=e=0;
+    printf("Enter the size of an array\n");
+    scanf("%d",&n);
+    printf("Enter array elements\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    
+    }
+    printf("Enter the number to be checked\n");
+    scanf("%d",&k);
+    for(i=0;i<n;i++)
+    {
+        if(a[i]==k)
+        {
+            g++;
+        }
+        else if(a[i]<k)
+        {
+            l++;
+        }
+        else
+        {
+        e++;
+        }
+}
+printf("Greater than, less than, equal is %d %d %d",g,l,e);
+}
+
+//OUTPUT:
+
+Enter the size of an array
+4
+Enter array elements
+1
+2
+3
+4
+Enter the number to be checked
+3
+Greater than, less than, equal is 1 2 1

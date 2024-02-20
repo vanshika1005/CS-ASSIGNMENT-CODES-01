@@ -1,0 +1,22 @@
+//Q7 Write a C program to print the diagonal elements of a matrix.
+
+//Code:
+
+#include<stdio.h>
+void main()
+{
+    int i;
+    int a[3][3]={{1, 2, 3},{4, 5, 6},{7, 8, 9}};
+    printf("Diagonal elements of the matrix:\n");
+    for(i=0;i<3;i++)
+    {
+        printf("%d ",a[i][i]);
+    }
+}
+
+//OUTPUT:
+
+Diagonal elements of the matrix:
+1 5 9
+
+
